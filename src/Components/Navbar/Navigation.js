@@ -6,7 +6,6 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import "./Navigation.css";
 import logoOne from "../../Images/Storefront.png";
-import { Link } from "react-router-dom";
 
 function Navigation() {
   return (
