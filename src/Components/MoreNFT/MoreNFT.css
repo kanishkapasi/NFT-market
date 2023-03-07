@@ -1,0 +1,101 @@
+.moreContainer .heading {
+  width: 85%;
+  margin: auto;
+  color: white;
+}
+.moreContainer .heading .paragaraph {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.moreContainer .heading .nftcard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.moreContainer .heading .nftcard .cardsnf {
+  margin: auto;
+  transition: all 0.5s;
+}
+
+.moreContainer .heading .nftcard .cardsnf .desCard {
+  padding: 10px;
+  width: 350px;
+  height: 200px;
+  background-color: #3b3b3b;
+  border-bottom-left-radius: 19px;
+  border-bottom-right-radius: 19px;
+}
+
+.moreContainer .heading .nftcard .cardsnf:hover {
+  transform: scaleX(1.05) scaleY(1.05);
+  cursor: pointer;
+}
+
+.moreContainer .heading .nftcard .cardsnf .desCard .avatarDes {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: end;
+}
+
+.moreContainer .heading .nftcard .cardsnf .desCard .avatarDes .ava {
+  width: 30px;
+  height: 30px;
+}
+
+.moreContainer .heading .nftcard .cardsnf .nft {
+  width: 350px;
+  height: 300px;
+}
+
+.moreContainer .heading .nftcard .cardsnf .desCard .avatarDes p {
+  font-size: 13px;
+}
+
+.moreContainer .heading .nftcard .cardsnf .desCard .priceCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1250px) {
+  .moreContainer .heading .nftcard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .moreContainer .heading .nftcard {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .moreContainer .heading .nftcard {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    margin: auto;
+  }
+
+  .moreContainer .heading .nftcard .cardsnf .nft {
+    width: 300px;
+    height: 250px;
+  }
+  .moreContainer .heading .nftcard .cardsnf .desCard {
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+    background-color: #3b3b3b;
+  }
+}

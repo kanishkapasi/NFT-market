@@ -1,0 +1,33 @@
+.navigation {
+  background-color: #2b2b2b;
+  z-index: 100;
+  padding-top: 10px;
+  height: 60px;
+}
+
+.navigation .navContainer {
+  color: white;
+}
+
+.navigation .navContainer .head {
+  gap: 2rem;
+}
+
+.body {
+  background-color: #3b3b3b;
+  color: white;
+}
+
+.header {
+  background-color: #3b3b3b;
+  color: white;
+}
+
+.btn {
+  background-color: #a259ff;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #a259ff;
+}

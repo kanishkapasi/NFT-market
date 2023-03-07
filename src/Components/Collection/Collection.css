@@ -1,0 +1,35 @@
+.imagesContainer {
+  width: 85%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.imagesContainer .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.imagesContainer .boxes .dogs .dogBox {
+  transition: all 0.4s;
+}
+.imagesContainer .boxes .dogs .dogBox:hover {
+  transform: scaleX(1.05) scaleY(1.05);
+  cursor: pointer;
+}
+
+.imagesContainer .boxes .dogs .icons {
+  transition: all 0.5s;
+}
+
+.imagesContainer .boxes .dogs .icons:hover {
+  transform: scaleX(1.05) scaleY(1.05);
+}
+
+@media screen and (max-width: 810px) {
+  .imagesContainer .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

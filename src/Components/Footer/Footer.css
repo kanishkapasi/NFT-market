@@ -1,0 +1,68 @@
+.footerContainer {
+  background-color: #3b3b3b;
+  width: 100%;
+  margin-top: 40px;
+  color: white;
+  height: 100%;
+  position: relative;
+  top: 20px;
+}
+
+.footerContainer .footer {
+  width: 85%;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 1px solid white;
+  gap: 2rem;
+}
+
+.footerContainer .footer .left .logoDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footerContainer .footer .left .social {
+  gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footerContainer .footer .left .social .log {
+  transition: all 0.5s;
+}
+
+.footerContainer .footer .left .social .log:hover {
+  cursor: pointer;
+  transform: scaleX(1.15) scaleY(1.15);
+}
+
+.footerContainer .footer .right .divSearch {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footerContainer .footer .right .divSearch .inputF {
+  border: none;
+  border-radius: 20px;
+  height: 30px;
+}
+
+.footerContainer .footer .right .divSearch .btn {
+  background-color: #a259ff;
+  color: white;
+}
+
+@media screen and (max-width: 570px) {
+  .footerContainer .footer {
+    text-align: center;
+  }
+}

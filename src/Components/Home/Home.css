@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.homeContainer {
+  width: 100%;
+  height: 100%;
+  background-color: #2b2b2b;
+  color: white;
+}
+
+/* Home and Main Image section */
+
+.homeContainer .home {
+  width: 85%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.homeContainer .home .btn {
+  background-color: #a259ff;
+  color: white;
+}
+
+.homeContainer .home .number {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+}
+
+.homeContainer .home .right .mainImage {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1175px) {
+  .homeContainer .home .right .mainImage {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 987px) {
+  .homeContainer .home {
+    text-align: center;
+  }
+  .homeContainer .home .left {
+    margin: auto;
+  }
+  .homeContainer .home .right {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 595px) {
+  .homeContainer .home .right .mainImage {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .homeContainer .home .right .mainImage {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* End Of Home Page */

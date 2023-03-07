@@ -1,0 +1,52 @@
+.highlightContainer .headingHigh {
+  width: 85%;
+  margin: auto;
+  color: white;
+}
+
+.highlightContainer .details {
+  width: 85%;
+  margin: auto;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.highlightContainer .details .detailsCard {
+  text-align: center;
+  padding: 15px;
+  background-color: #3b3b3b;
+  border-radius: 19px;
+  transition: all 0.5s;
+}
+
+.highlightContainer .details .detailsCard:hover {
+  transform: scaleX(1.05) scaleY(1.05);
+}
+
+.highlightContainer .details .detailsCard .highIcon {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+.highlightContainer .details .detailsCard p {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 850px) {
+  .highlightContainer .details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .highlightContainer .details {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+}

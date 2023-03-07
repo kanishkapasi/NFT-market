@@ -1,0 +1,66 @@
+.creatorsContainer .heading {
+  width: 85%;
+  margin: auto;
+  color: white;
+}
+.creatorsContainer .heading .paragaraph {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.creatorsContainer .avatar {
+  padding: 20px;
+  width: 85%;
+  margin: auto;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.creatorsContainer .avatar .card {
+  text-align: center;
+  padding: 20px;
+  width: 85%;
+  margin: auto;
+  color: white;
+  border-radius: 19px;
+  background-color: #3b3b3b;
+  transition: all 0.5s;
+}
+
+.creatorsContainer .avatar .card:hover {
+  transform: scaleX(1.05) scaleY(1.05);
+  cursor: pointer;
+}
+
+.creatorsContainer .avatar .card .avatarImage {
+  margin: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .creatorsContainer .avatar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .creatorsContainer .avatar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .creatorsContainer .avatar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+}
